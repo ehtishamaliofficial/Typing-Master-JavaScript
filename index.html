@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            color: white;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(67, 67, 255);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+
+        }
+        .main-headig{
+            text-align: center;
+            font-size: 3rem;
+            
+        }
+        #paragraph{
+            text-align: center;
+            color: black;
+        }
+        #words{
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            background-color: darkgrey;
+            outline: none;
+            font-size: 1.3rem;
+            box-shadow: 10px 10px 5px gray;
+        }
+        #words:active{
+            outline: none;
+            border: 0;
+        }
+        #btn{
+            padding: 7px 20px;
+            border-radius: 5px;
+            background-color: rgb(0, 0, 53);
+            color: white;
+            font-size: large;
+            border: none;
+            cursor: pointer;
+        }
+        #btn:hover{
+            background-color:rgb(0, 0, 100) ;
+        }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1 class="main-headig">Typing Speed Master</h1>
+        <h2 id="paragraph"></h2>
+        <textarea name="" id="words" cols="100" rows="15"></textarea>
+        <button id="btn">Start</button>
+    </div>
+    <script src="index.js">
+        
+    </script>
+</body>
+</html>
